@@ -1,0 +1,20 @@
+query FindCountry($input: LocationInput!) {
+    country(input: $input)  {
+        id
+        name
+        cities {
+            name
+        }
+        jobs {
+            title
+            slug
+            tags {
+                name
+            }
+            company {
+                name
+                slug
+            }
+        }
+    }
+}

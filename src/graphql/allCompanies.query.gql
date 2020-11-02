@@ -1,0 +1,20 @@
+query AllCompanies {
+  companies {
+    id
+    name
+    slug
+    websiteUrl
+    jobs {
+      title
+      slug
+      tags {
+        name
+      }
+      company {
+        name
+        slug
+      }
+    }
+    logoUrl
+  }
+}

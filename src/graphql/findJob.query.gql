@@ -1,0 +1,17 @@
+query FindJob($input: JobInput!) {
+    job(input: $input) {
+        id
+        title
+        description
+        slug
+        company {
+            name
+            slug
+        }
+        tags {
+            id
+            name
+        }
+        postedAt
+    }
+}

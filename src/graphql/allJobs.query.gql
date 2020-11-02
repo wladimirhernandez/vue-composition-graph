@@ -1,0 +1,16 @@
+query AllJobs {
+    jobs {
+        id
+        title
+        slug
+        company {
+            name
+            slug
+        }
+        tags {
+            id
+            name
+        }
+        postedAt
+    }
+}

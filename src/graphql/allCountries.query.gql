@@ -1,0 +1,14 @@
+query AllCountries {
+    countries {
+        id
+        name
+        slug
+        type
+        cities {
+            name
+        }
+        jobs {
+            id
+        }
+    }
+}
